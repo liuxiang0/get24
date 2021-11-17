@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Python 3 <https://rosettacode.org/wiki/24_game/Solve#Python>
+# from <https://rosettacode.org/wiki/24_game/Solve#Python>
 
 from operator import mul, sub, add
  
@@ -9,8 +9,8 @@ def div(a, b):
         return 999999.0
     return a / b
  
-ops = {mul: '*', div: '/', sub: '-', add: '+'}
- 
+ops = {mul: '*', div: '/', sub: '-', add: '+'}  # set for operators
+
 def solve24(num, how, target):
     if len(num) == 1:
         if round(num[0], 5) == round(target, 5):
